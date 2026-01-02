@@ -325,7 +325,7 @@ export default function Home() {
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
-                I Just want to tell you that I bought so much chocolates for you haha and will give you inshAllah jab hum milien gaen.
+                I Just want to tell you that I bought so much chocolates for you, haha and will give you inshAllah jab hum milien gaen.
                 I love You soo much meri shahzadi
               </motion.div>
             )}

@@ -58,12 +58,16 @@ const loveLineVariants: Variants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   initial: { y: 0, boxShadow: "0 20px 40px rgba(15, 7, 32, 0.06)" },
   hover: {
     y: -10,
     boxShadow: "0 35px 60px rgba(17, 8, 44, 0.18)",
-    transition: { type: "spring", stiffness: 120, damping: 20 },
+    transition: {
+      type: "spring" as const,
+      stiffness: 120,
+      damping: 20,
+    },
   },
 };
 

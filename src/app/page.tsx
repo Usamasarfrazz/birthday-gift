@@ -136,8 +136,16 @@ function FloatingHearts() {
 const playChime = () => {
   if (typeof window === "undefined") return;
   try {
-    const AudioContext = window.AudioContext || window.webkitAudioContext;
-    const ctx = new AudioContext();
+    type WebkitAudioContext = typeof window & {
+      webkitAudioContext?: typeof AudioContext;
+    };
+    const globalWindow = window as WebkitAudioContext;
+    const AudioCtxConstructor =
+      globalWindow.AudioContext ?? globalWindow.webkitAudioContext;
+
+    if (!AudioCtxConstructor) return;
+
+    const ctx = new AudioCtxConstructor();
     const oscillator = ctx.createOscillator();
     const gain = ctx.createGain();
     oscillator.type = "sine";

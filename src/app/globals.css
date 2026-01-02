@@ -1,16 +1,22 @@
 @import "tailwindcss";
 
 :root {
+<<<<<<< HEAD
   --background: #fff2f8;
   --foreground: #1f1b32;
   --accent: #f8a1c4;
   --soft: #ffffff;
   --glow: rgba(249, 205, 235, 0.6);
+=======
+  --background: #ffffff;
+  --foreground: #171717;
+>>>>>>> a26392a (Initial commit from Create Next App)
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+<<<<<<< HEAD
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
 }
@@ -41,3 +47,21 @@ body {
   }
 }
 
+=======
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+>>>>>>> a26392a (Initial commit from Create Next App)

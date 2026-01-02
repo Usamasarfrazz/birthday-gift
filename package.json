@@ -9,10 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "framer-motion": "^12.23.26",
-=======
->>>>>>> a26392a (Initial commit from Create Next App)
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"

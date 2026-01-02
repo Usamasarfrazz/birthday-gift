@@ -1,5 +1,4 @@
-<<<<<<< HEAD
- "use client";
+"use client";
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -13,22 +12,22 @@ const loveLines = [
 
 const memoryMoments = [
   {
-    title: "First time we talk",
+    title: "Rooftop chai sunrise",
     description:
-      "Jab hamari pehli dafa baat hoi tab hum donon ny ek dosre sy photography share ki thi haha and phir baatien hoen or etni hoen ky piyar hooo gia jee ap sy Alhumdulliah.",
-    detail: "20 May 2025 · 10:36 pm ",
+      "You turned sipping tea on the balcony into a promise that our mornings will always be a little softer.",
+    detail: "June 2023 · Doha skyline",
   },
   {
-    title: " Rishty ke leye purpose",
+    title: "Rainy window giggles",
     description:
-      "Ahm Ahmm jeee to hamari batien hoen or or meny phir ap ko purpose kia tha ky me like rishta karna chahta hun not any relationship.",
-    detail: "23 July 2025 ",
+      "We traced constellations on steamed glass while laughing at how thunder tried to steal our secrets.",
+    detail: "November 2024 · Cozy apartment",
   },
   {
-    title: "First Look",
+    title: "Library starlight plans",
     description:
-      "Etniiiii requests ky baad ap ny mujhe apni pic bheji and to be very honest meri shahzadi bohot piyari ha meri nazar maa MashaAllah.",
-    detail: "",
+      "You whispered future adventures under the hush of books, and the whole shelf held its breath.",
+    detail: "March 2022 · City library",
   },
 ];
 
@@ -200,7 +199,6 @@ export default function Home() {
             </motion.p>
           </div>
         </motion.section>
-
         <motion.section
           variants={fadeInUp}
           initial="hidden"
@@ -208,10 +206,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.4 }}
           className="space-y-6 rounded-3xl bg-white/80 p-8 shadow-[0_20px_40px_rgba(21,5,45,0.12)] backdrop-blur-3xl"
         >
-          <motion.h2
-            variants={fadeInUp}
-            className="text-2xl font-semibold text-[#28163f]"
-          >
+          <motion.h2 variants={fadeInUp} className="text-2xl font-semibold text-[#28163f]">
             A love letter written in soft scribbles
           </motion.h2>
           <motion.div
@@ -228,17 +223,12 @@ export default function Home() {
             className="space-y-4 text-lg leading-relaxed text-[#3e3362]"
           >
             {loveLines.map((line) => (
-              <motion.p
-                key={line}
-                variants={loveLineVariants}
-                className="text-base sm:text-lg"
-              >
+              <motion.p key={line} variants={loveLineVariants} className="text-base sm:text-lg">
                 {line}
               </motion.p>
             ))}
           </motion.div>
         </motion.section>
-
         <motion.section
           variants={fadeInUp}
           initial="hidden"
@@ -247,16 +237,13 @@ export default function Home() {
           className="space-y-6 rounded-3xl bg-white/90 p-8 shadow-[0_25px_55px_rgba(18,6,42,0.15)] backdrop-blur-3xl"
         >
           <div className="flex flex-col gap-2">
-            <motion.h2
-              variants={fadeInUp}
-              className="text-2xl font-semibold text-[#28163f]"
-            >
+            <motion.h2 variants={fadeInUp} className="text-2xl font-semibold text-[#28163f]">
               Memories & reasons that still glow
             </motion.h2>
             <p className="text-sm uppercase tracking-[0.5em] text-rose-500">
               each card is a heartbeat from us
-            </p>
-          </div>
+          </p>
+        </div>
           <div className="grid gap-4 md:grid-cols-3">
             {memoryMoments.map((memory) => (
               <motion.article
@@ -281,16 +268,13 @@ export default function Home() {
                     💗
                   </motion.span>
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-[#2b173b]">
-                  {memory.title}
-                </h3>
+                <h3 className="mt-4 text-lg font-semibold text-[#2b173b]">{memory.title}</h3>
                 <p className="mt-2 text-sm text-[#4c3a5f]">{memory.detail}</p>
                 <p className="mt-4 text-base text-[#39253f]">{memory.description}</p>
               </motion.article>
             ))}
           </div>
         </motion.section>
-
         <motion.section
           variants={fadeInUp}
           initial="hidden"
@@ -300,12 +284,8 @@ export default function Home() {
         >
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <h2 className="text-2xl font-semibold text-[#2b1341]">
-                Click for a surprise 🎁
-              </h2>
-              <p className="text-sm text-[#3c2b56]">
-                I left a little secret that only you can unlock.
-              </p>
+              <h2 className="text-2xl font-semibold text-[#2b1341]">Click for a surprise 🎁</h2>
+              <p className="text-sm text-[#3c2b56]">I left a little secret that only you can unlock.</p>
             </div>
             <motion.button
               type="button"
@@ -326,13 +306,12 @@ export default function Home() {
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
-                I Just want to tell you that I bought so much chocolates for you, haha and will give you inshAllah jab hum milien gaen.
-                I love You soo much meri shahzadi
+                I crafted a playlist filled with the songs you hum when you are daydreaming, and I am
+                planning a sunset picnic where we can dance barefoot through cotton candy skies.
               </motion.div>
             )}
           </AnimatePresence>
         </motion.section>
-
         <motion.section
           variants={fadeInUp}
           initial="hidden"
@@ -360,70 +339,7 @@ export default function Home() {
           </motion.span>
         </motion.section>
       </motion.main>
-=======
-import Image from "next/image";
-
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
->>>>>>> a26392a (Initial commit from Create Next App)
     </div>
   );
 }
+
